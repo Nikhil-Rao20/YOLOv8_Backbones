@@ -778,7 +778,7 @@ class MultiTaskLoss(v8DetectionLoss):
 
                 order = torch.argsort(singulars, dim=-1, descending=True)
                 singulars, basis = singulars[order][:rank], basis[:, order][:, :rank]
-                print('Singulars :',singulars.shape, basis.shape)
+                # print('Singulars :',singulars.shape, basis.shape)
                 if scale_mode == 'min':
                     weights = basis * torch.sqrt(singulars[-1]).view(1, -1)
                 elif scale_mode == 'median':

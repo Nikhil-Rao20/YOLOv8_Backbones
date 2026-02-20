@@ -18,7 +18,8 @@ Example:
 """
 
 from .block import (C1, C2, C3, C3TR, DFL, SPP, SPPF, Bottleneck, BottleneckCSP, C2f, C3Ghost, C3x, GhostBottleneck,
-                    HGBlock, HGStem, Proto, RepC3, BasicBlock_Res, ResNetBlock)
+                    HGBlock, HGStem, Proto, RepC3, BasicBlock_Res, ResNetBlock, ContrastiveHead, BNContrastiveHead,
+                    ImagePoolingAttn, C2fAttn)
 from .conv import (CBAM, ChannelAttention, Concat, Conv, Conv2, ConvTranspose, DWConv, DWConvTranspose2d, Focus,
                    GhostConv, LightConv, RepConv, SpatialAttention,
                     GAM_Attention,GCT,ShuffleAttention,ResBlock_CBAM,ECAAttention,MHSA,GlobalContext,GatherExcite,
@@ -39,4 +40,5 @@ __all__ = ('Conv', 'Conv2', 'LightConv', 'RepConv', 'DWConv', 'DWConvTranspose2d
            'GAM_Attention','GCT','ShuffleAttention','ResBlock_CBAM','ECAAttention','MHSA','GatherExcite','GlobalContext',
            'CBAM_BaseConv', 'CBAM_Flatten', 'CBAM_ChannelGate', 'CBAM_ChannelPool', 'CBAM_SpatialGate', 'CBAM_Conv', 
            'ConvNeXt_LayerNorm', 'ConvNeXt_DropPath', 'ConvNeXt_GRN', 'ConvNeXt_Conv',
-           'InceptionNeXt_MetaNeXtBlock',  'InceptionNeXt_Conv','BasicBlock_Res', 'ResNetBlock' )
+           'InceptionNeXt_MetaNeXtBlock',  'InceptionNeXt_Conv','BasicBlock_Res', 'ResNetBlock', 'BNContrastiveHead', 'ContrastiveHead',
+            'C2fAttn', 'ImagePoolingAttn' )
